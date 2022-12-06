@@ -1,10 +1,10 @@
 /* font-family: 'Poppins', sans-serif; -: Headings : 600 */
 /* font-family: 'Open Sans', sans-serif; -: Body, Call-to-Action : 400 ,700 */
-/* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+} 
 
 h1,
 h2 {
