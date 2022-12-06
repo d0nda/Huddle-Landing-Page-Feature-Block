@@ -1,4 +1,3 @@
-
 html,
 body {
   margin: 0;
@@ -15,6 +14,7 @@ p {
   font-size: 18px;
   color: hsl(208, 11%, 55%);
 }
+
 header {
   margin-top: 20px;
 }
@@ -46,7 +46,15 @@ header {
   display: flex;
   flex-direction: column;
   background-color: hsl(193, 100%, 96%);
-  background-image: url("images/bg-hero-desktop.svg");
+  background-image: url("/images/bg-hero-desktop.svg");
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    height: 150vh;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url("/images/bg-hero-mobile.svg");
+  }
 }
 
 .build {
@@ -70,6 +78,26 @@ header {
   text-align: left;
 }
 
+@media screen and (max-width: 650px) {
+  .build {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .build-description > h1 {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .build-description > p {
+    text-align: center;
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
 .hero-mockup {
   width: 520px;
 }
@@ -86,6 +114,22 @@ header {
 
 .hero-btn:hover {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 650px) {
+  .hero-mockup {
+    width: 450px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 60px;
+  }
 }
 
 .features {
@@ -125,6 +169,38 @@ header {
   width: 300px;
 }
 
+@media screen and (max-width: 650px) {
+  .grow {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    box-shadow: 0 2px 10px hsl(208, 11%, 55%);
+    border-radius: 5px;
+  }
+
+  .grow-description {
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+  }
+
+  .grow-description > h2 {
+    text-align: center;
+  }
+
+  .grow-description > p {
+    text-align: center;
+  }
+
+  .grow-mockup {
+    margin: auto;
+    width: 300px;
+  }
+}
+
 .flowing {
   display: flex;
   width: 100%;
@@ -153,6 +229,38 @@ header {
 
 .flowing-mockup {
   width: 300px;
+}
+
+@media screen and (max-width: 650px) {
+  .flowing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    box-shadow: 0 2px 10px hsl(208, 11%, 55%);
+    border-radius: 5px;
+  }
+
+  .flowing-description {
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+  }
+
+  .flowing-description > h2 {
+    text-align: center;
+  }
+
+  .flowing-description > p {
+    text-align: center;
+  }
+
+  .flowing-mockup {
+    margin: auto;
+    width: 300px;
+  }
 }
 
 .users {
@@ -184,6 +292,39 @@ header {
 
 .users-mockup {
   width: 300px;
+}
+
+@media screen and (max-width: 650px) {
+  .users {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 60%;
+    box-shadow: 0 2px 10px hsl(208, 11%, 55%);
+    border-radius: 5px;
+  }
+
+  .users-description {
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+  }
+
+  .users-description > h2 {
+    text-align: center;
+  }
+
+  .users-description > p {
+    text-align: center;
+  }
+
+  .users-mockup {
+    margin: auto;
+    width: 300px;
+  }
 }
 
 .ready {
@@ -218,14 +359,47 @@ header {
   text-align: center;
 }
 
-footer {
-  background-color: hsl(192, 100%, 9%);
-  overflow-x: hidden;
+@media screen and (max-width: 650px) {
+  .ready {
+    background-color: white;
+    margin: auto;
+    width: 450px;
+    box-shadow: 0 2px 10px hsl(208, 11%, 55%);
+    border-radius: 5px;
+    padding: 30px;
+    z-index: 1;
+    position: absolute;
+    left: 9%;
+    margin-top: -10%;
+  }
+
+  .ready-btn {
+    display: flex;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 3.125rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .ready > h2 {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
-.company-info {
+footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: hsl(192, 100%, 9%);
+  overflow-x: hidden;
 }
 
 .footer-logo {
@@ -237,8 +411,45 @@ footer {
   filter: brightness(0) invert(1);
 }
 
+.company-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  inline-size: 510px;
+  overflow-wrap: break-word;
+}
+
+.phone {
+  display: flex;
+}
+
+.email {
+  display: flex;
+}
+
+#text,
+#icon {
+  line-height: 45px;
+}
+
+#text {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+}
+
+#icon {
+  vertical-align: middle;
+  font-size: 1.31rem;
+}
+
 .links {
+  display: flex;
   justify-content: center;
+  margin-top: 80px;
 }
 
 ul {
@@ -264,44 +475,30 @@ li a:hover {
   text-decoration: underline;
 }
 
-.awf {
-  display: flex;
-  flex-direction: column;
-}
-
-.cbc {
-  display: flex;
-  flex-direction: column;
-}
-
 a {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
+.awf {
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.cbc {
+  flex-direction: column;
+  margin-left: 30px;
+}
+
 .socials {
   display: flex;
   margin: auto;
-  justify-content: flex-end;
-  justify-items: center;
+  justify-content: left;
+  justify-items: left;
   padding: 2px 6px;
   gap: 0.813rem;
-  margin-right: 20px;
-}
-
-#text,
-#icon {
-  line-height: 50px;
-}
-
-#text {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-}
-#icon {
-  vertical-align: middle;
-  font-size: 1.31rem;
+  margin: 90px;
+  margin-top: 60%;
 }
 
 .fa-solid,
@@ -365,4 +562,67 @@ a {
   text-align: right;
   font-size: 14px;
   margin-right: 20px;
+  margin: 70px;
+}
+
+.socials-copy {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    display: flex;
+    width: 250px;
+    margin-top: 320px;
+    margin-bottom: 50px;
+    margin-left: 3.75rem;
+    filter: brightness(0) invert(1);
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: -65%;
+  }
+
+  li {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+  }
+
+  .awf {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cbc {
+    display: flex;
+    flex-direction: column;
+    margin-left: -1.5%;
+  }
+
+  .socials {
+    display: flex;
+    margin: auto;
+    justify-content: left;
+    justify-items: left;
+    padding: 2px 6px;
+    gap: 0.813rem;
+    margin-top: 20%;
+  }
 }
