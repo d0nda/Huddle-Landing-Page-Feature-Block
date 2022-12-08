@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 h1,
 h2 {
@@ -18,7 +18,6 @@ p {
 }
 
 body {
-  margin: 0;
   overflow-x: hidden;
 }
 
@@ -203,7 +202,7 @@ header {
     justify-content: center;
     margin: auto;
     margin-top: 50px;
-    width: 45%;
+    width: 80%;
     box-shadow: 0 2px 10px hsl(208, 11%, 55%);
     border-radius: 5px;
   }
@@ -265,7 +264,7 @@ header {
     justify-content: center;
     margin: auto;
     margin-top: 50px;
-    width: 45%;
+    width: 80%;
     box-shadow: 0 2px 10px hsl(208, 11%, 55%);
     border-radius: 5px;
   }
@@ -329,7 +328,7 @@ header {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 150px;
-    width: 45%;
+    width: 80%;
     box-shadow: 0 2px 10px hsl(208, 11%, 55%);
     border-radius: 5px;
   }
@@ -555,6 +554,8 @@ a {
 }
 
 .fa-facebook-f {
+  width: 2rem;
+  height: 2rem;
   border: 0.063rem solid white;
   border-radius: 50%;
 }
@@ -565,6 +566,8 @@ a {
 }
 
 .fa-twitter {
+  width: 2rem;
+  height: 2rem;
   border: 0.063rem solid white;
   border-radius: 50%;
 }
@@ -575,6 +578,8 @@ a {
 }
 
 .fa-instagram {
+  width: 2rem;
+  height: 2rem;
   border: 0.063rem solid white;
   border-radius: 50%;
 }
