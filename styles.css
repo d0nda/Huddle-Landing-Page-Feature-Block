@@ -26,7 +26,7 @@ header {
 }
 
 .logo {
-  transform: scale(0.8);
+  transform: scale(0.7);
 }
 
 .header-btn {
@@ -43,6 +43,10 @@ header {
 }
 
 @media screen and (max-width: 650px) {
+  header {
+    display: inline-block;
+    margin-top: 20px;
+  }
   .header-btn {
     box-shadow: 0 2px 8px hsl(206, 13%, 66%);
     float: right;
@@ -62,7 +66,6 @@ header {
 }
 
 .hero {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -72,7 +75,7 @@ header {
 
 @media screen and (max-width: 650px) {
   .hero {
-    height: 150vh;
+    height: 160vh;
     background-color: hsl(193, 100%, 96%);
     background-image: url("/images/bg-hero-mobile.svg");
   }
@@ -84,14 +87,10 @@ header {
 }
 
 .build-description {
-  margin: auto;
   margin-right: 40px;
   padding-top: 10px;
   inline-size: 34.375em;
   overflow-wrap: break-word;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .build-description > h1 {
@@ -100,6 +99,7 @@ header {
 
 .build-description > p {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 650px) {
