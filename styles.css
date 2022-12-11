@@ -42,7 +42,7 @@ header {
   cursor: pointer;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   header {
     display: inline-block;
     margin-top: 20px;
@@ -73,7 +73,7 @@ header {
   background-image: url("/images/bg-hero-desktop.svg");
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   .hero {
     height: 160vh;
     background-color: hsl(193, 100%, 96%);
@@ -102,7 +102,7 @@ header {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   .build {
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ header {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   .hero-mockup {
     width: 350px;
     margin: auto;
@@ -195,7 +195,7 @@ header {
   width: 300px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   .grow {
     display: flex;
     flex-direction: column-reverse;
@@ -257,7 +257,7 @@ header {
   width: 300px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   .flowing {
     display: flex;
     flex-direction: column;
@@ -320,7 +320,7 @@ header {
   width: 300px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   .users {
     display: flex;
     flex-direction: column-reverse;
@@ -385,7 +385,7 @@ header {
   text-align: center;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   .ready {
     background-color: white;
     margin: auto;
@@ -603,7 +603,7 @@ a {
   margin: auto;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
   footer {
     display: flex;
     flex-direction: column;
