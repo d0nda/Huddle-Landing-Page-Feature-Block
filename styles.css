@@ -125,6 +125,8 @@ header {
 }
 
 .hero-mockup {
+  display: flex;
+  flex-direction: column;
   width: 520px;
 }
 
